@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity type:</strong>
+  <%= @activity_log.activity_type %>
+</p>
+
+<p>
+  <strong>Minutes:</strong>
+  <%= @activity_log.duration %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @activity_log.date %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @activity_log.user.email %>
+</p>
+
+<%= link_to 'Edit', edit_activity_log_path(@activity_log) %> |
+<%= link_to 'Back', activity_logs_path %>

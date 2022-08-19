@@ -1,0 +1,144 @@
+.main_wrapper
+{
+  background-color: rgb(193, 210, 250);
+}
+
+#container
+ {
+  text-align: right;
+  list-style-type: none;
+  border: 1px, solid, rgba(47, 47, 47, 0.8);
+  background-color: rgba(47, 47, 47, 0.8);
+  height: 35px;
+  padding: 5px;
+}
+
+#container li
+{
+  display: inline;
+  padding: 10px;
+}
+
+#banner
+{
+  display: inline-block;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 30px;
+  color: rgb(47, 47, 47);
+  text-align: left;
+}
+
+a {
+  display: inline-block;
+  color: rgb(193, 210, 250);
+}
+
+a img {
+  display: block;
+}
+
+#logo img
+{
+  float: left;
+  height: 150px;
+  width: 150px;
+
+}
+
+#slogan
+{
+  display: block;
+  font-family: 'Paytone One', sans-serif;
+  color: rgb(47, 47, 47);
+  text-align: left;
+}
+
+#buddah
+ {
+  font-family: 'Acme', sans-serif;
+  color: rgb(193, 210, 250); 
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+  background-color: rgba(47, 47, 47, 0.8);
+  border: 1px solid rgba(47, 47, 47, 0.8);
+}
+
+#clear img
+{
+  display: inline;
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#strong img
+{
+  display: inline;
+  float: right;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#mma img
+{
+  display: inline;
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#yoga img 
+{
+  display: inline;
+  float: right;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+}
+
+#main_container 
+{
+  font-family: 'Acme', sans-serif;
+  color: rgb(193, 210, 250);
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(47, 47, 47, 0.8);
+  border: 1px solid rgba(47, 47, 47, 0.8);
+  padding: 10px;
+  display: block;
+}
+
+th, td 
+{
+  padding: 15px;
+  position: relative;
+  left: 200px;
+}
+
+footer 
+{
+  text-align: center;
+  margin: 15px;
+  border: 1px solid rgba(47, 47, 47, 0.8);
+  background-color: rgba(47, 47, 47, 0.8);
+  list-style-type: none;
+  display: inline_block;
+}
+
+footer li
+{
+  display: inline-flex;
+  padding: 10px;
+
+}
+
+#bottom img
+{
+  color: rgb(193, 210, 250);
+  height: 40px;
+  width: 40px;
+}

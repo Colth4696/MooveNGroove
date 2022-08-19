@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="application.css" />
+    <link href="https://fonts.googleapis.com/css?family=Acme|Anton|Open+Sans+Condensed:300|Oswald|Paytone+One" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Charm|Kaushan+Script|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Anton|Open+Sans+Condensed:300|Oswald|Paytone+One|Sawarabi+Mincho" rel="stylesheet">
+    <title>Moove and Groove</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <div class="main_wrapper">
+  
+  <div id='container'>
+  <nav>
+  <% if !user_signed_in? %>
+  <li><%= link_to 'Log In', new_user_session_path %></li>
+  <% else %>
+  <li><%= link_to 'Home', new_user_session_path %></li>
+  <li><%= link_to 'New Activity Log', new_activity_log_path %></li>
+  <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li> 
+  <% end %>
+  </nav>
+  </div>
+
+  <div id="banner"
+    <h1>Move and Groove</h1>
+  </div>
+  <div id="logo">
+  <%= image_tag("koi.png", :alt => "home") %>
+  </div>
+  <div id="slogan">
+      <h1>Strong and Clear</h1>
+  </div>
+
+  <div id="clear">
+  <%= image_tag("meditate.png", :alt => "meditate") %>
+  </div>
+
+  <div id="strong">
+  <%= image_tag("strong.png", :alt => "strong")%>
+  </div>
+
+  <div id="buddah">
+    <p>"to keep the body in <em>good health</em> is a duty... otherwise, we shall not be able to keep our mind</p>
+    <h1>Strong and Clear."</h1>
+    <p>~Buddha~</p>
+  </div>
+
+  <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+
+  <div id="mma">
+  <%= image_tag("mma.png", :alt => "mma") %>
+  </div>
+
+  <div id="yoga">
+  <%= image_tag("yoga.png", :alt => "yoga") %>
+  </div>
+
+    <div id='main_container'>
+    <%= yield %>
+    </div>
+
+   
+    <div id="bottom">
+    <footer> 
+          <nav>
+              <ul>
+                  <li><a href='#'><%= image_tag("facebook.png", size: "40x40") %></a></li>
+                  <li><a href='#'><%= image_tag("instagram.png", size: "40x40") %></a></li>
+                  <li><a href='#'><%= image_tag("twitter.png", size: "40x40") %></a></li>
+              </ul>
+          </nav>
+    </footer>
+  </div>
+  </div>
+
+  </body>
+</html>
